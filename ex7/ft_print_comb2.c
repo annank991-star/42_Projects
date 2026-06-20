@@ -5,7 +5,7 @@ void    ft_print_comb2(void)
     char    a;
     char    b;
 
-         a = '0';
+         a = 0;
     
     while (a <= 98)
     {
@@ -17,13 +17,17 @@ void    ft_print_comb2(void)
             write (1, &digit, 1);
             digit = a % 10 + '0';
             write (1, &digit, 1);
+            write(1, " ", 1);
+            digit = b / 10 + '0';
+            write (1, &digit, 1);
+            digit = b % 10 + '0';
+            write (1, &digit, 1);
             if (!(a == 98 && b == 99))
-            write (1, ",", 1);
+            write (1, ", ", 2);
             b++;
-            {
-            a++;
-            }
+            
         }
+        a++;
     }
 
 }

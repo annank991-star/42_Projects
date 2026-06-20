@@ -1,5 +1,7 @@
-#include <stdio.h>
-int main(void) {
-    printf("Hello. my name is Anna, C!\n");
-    return 0;
+#include <unistd.h>
+int main(void) 
+   {char str[i] = "Hello my name is Anna\0";
+    
+    write(1, &i, 1);
+    return (0);
 }

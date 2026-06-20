@@ -4,11 +4,13 @@ void    ft_print_alphabet(void)
 {
 
     char c;
-    c = '0';
+    c = 'a';
 
     while (c <= 'z')
     {
     write(1, &c, 1);
+    write(1, " ", 1);
+    write(1, "\n", 1);
     c++;
     }
 }
